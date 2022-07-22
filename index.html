@@ -136,7 +136,7 @@
             if (Tagline === undefined || Tagline === "")
                 return;
 
-            var url = `/me $(eval currenttierpatched=$(urlfetch json https://api.henrikdev.xyz/valorant/v1/mmr/${Region}/${Username}/${Tagline}).data.currenttierpatched) $(eval ranking_in_tier=$(urlfetch json https://api.henrikdev.xyz/valorant/v1/mmr/${Region}/${Username}/${Tagline}).data.ranking_in_tier)rr`;
+            var url = `$(eval currenttierpatched=$(urlfetch json https://api.henrikdev.xyz/valorant/v1/mmr/${Region}/${Username}/${Tagline}).data.currenttierpatched) $(eval ranking_in_tier=$(urlfetch json https://api.henrikdev.xyz/valorant/v1/mmr/${Region}/${Username}/${Tagline}).data.ranking_in_tier)rr [@$(user)]`;
 
             document.getElementById("result").style.visibility = "visible";
             document.getElementById("URLinput").value = url;
